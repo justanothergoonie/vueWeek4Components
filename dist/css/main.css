@@ -134,4 +134,9 @@ table {
 	border-spacing: 0;
 }
 
+.done {
+	color: green;
+	text-decoration: line-through;
+}
+
 /*# sourceMappingURL=main.css.map */

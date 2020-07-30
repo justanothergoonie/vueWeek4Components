@@ -28,7 +28,24 @@
 			<click-counter></click-counter>
 			<click-counter></click-counter>
 			<click-counter></click-counter> -->
+
 			<plan-picker></plan-picker>
+			<todo-item>
+				buy bananas
+				<template #description>
+					<p>Bananas are good for your health</p>
+				</template>
+				<template #button-text> Make it rain</template>
+			</todo-item>
+			<todo-item>
+				buy salad
+			</todo-item>
+			<todo-item>
+				buy gatorade
+			</todo-item>
+			<todo-item>
+				buy water
+			</todo-item>
 		</div>
 
 		<script type="text/x-template" id="click-counter-template">
@@ -38,6 +55,9 @@
 			</div>
 		</script>
 		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+		<script src="dist/js/planPicker.js"></script>
+		<script src="dist/js/classVue.js"></script>
+		<script src="dist/js/vueSlotsNotes.js"></script>
 		<script src="dist/js/main.js"></script>
 	</body>
 </html>
