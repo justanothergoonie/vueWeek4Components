@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="x-ua-compatible" content="ie=edge" />
+		<title>¯\_(ツ)_/¯</title>
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<link rel="stylesheet" href="dist/css/main.css" />
+	</head>
+
+	<body>
+		<div id="app">
+			<plan-picker></plan-picker>
+
+			<button-counter></button-counter>
+			<button-counter></button-counter>
+			<button-counter></button-counter>
+			<toggle-button></toggle-button>
+			<toggle-button></toggle-button>
+			<toggle-button></toggle-button>
+
+			<blog-post
+				v-for="post in posts"
+				:key="post.id"
+				:title="post.title"
+			></blog-post>
+
+			<click-counter></click-counter>
+			<click-counter></click-counter>
+			<click-counter></click-counter>
+		</div>
+
+		<script type="text/x-template" id="click-counter-template">
+			<div>
+				<p>the count is</p>
+				<button @click="count++">{{count}}</button>
+			</div>
+		</script>
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+		<script src="dist/js/main.js"></script>
+	</body>
+</html>
