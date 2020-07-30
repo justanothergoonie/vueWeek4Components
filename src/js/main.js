@@ -2,43 +2,43 @@ console.log(`Hello World from main.js!
 Change this message, and make sure it changes in the browser 
 to verify that you're working in the right files.`);
 
-Vue.component('click-counter', {
-	template: `#click-counter-template`,
-	data() {
-		return {
-			count: 0,
-		};
-	},
-});
+// Vue.component('click-counter', {
+// 	template: `#click-counter-template`,
+// 	data() {
+// 		return {
+// 			count: 0,
+// 		};
+// 	},
+// });
 
-Vue.component('button-counter', {
-	data: function () {
-		return {
-			count: 0,
-		};
-	},
-	template:
-		'<button v-on:click="count++">You clicked me {{ count }} times.</button>',
-});
+// Vue.component('button-counter', {
+// 	data: function () {
+// 		return {
+// 			count: 0,
+// 		};
+// 	},
+// 	template:
+// 		'<button v-on:click="count++">You clicked me {{ count }} times.</button>',
+// });
 
-Vue.component('toggle-button', {
-	data: function () {
-		return {
-			on: true,
-		};
-	},
-	template: `
-            <button @click="on = !on">
-                <span v-if="on">ON</span>
-                <span v-else>OFF</span>
-            </button>
-            `,
-});
+// Vue.component('toggle-button', {
+// 	data: function () {
+// 		return {
+// 			on: true,
+// 		};
+// 	},
+// 	template: `
+//             <button @click="on = !on">
+//                 <span v-if="on">ON</span>
+//                 <span v-else>OFF</span>
+//             </button>
+//             `,
+// });
 
-Vue.component('blog-post', {
-	props: ['title'],
-	template: '<h3>{{ title }}</h3>',
-});
+// Vue.component('blog-post', {
+// 	props: ['title'],
+// 	template: '<h3>{{ title }}</h3>',
+// });
 
 let PlanComponent = {
 	template: `
